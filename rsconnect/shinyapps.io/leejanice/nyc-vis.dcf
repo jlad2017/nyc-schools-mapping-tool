@@ -5,9 +5,9 @@ account: leejanice
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4495512
-bundleId: 4935018
+bundleId: 4935424
 url: https://leejanice.shinyapps.io/nyc-vis/
-when: 1629257508.34412
-lastSyncTime: 1629257508.34414
+when: 1629268105.08889
+lastSyncTime: 1629268105.08892
 asMultiple: FALSE
 asStatic: FALSE

@@ -263,7 +263,8 @@ server <- function(input, output) {
             addLegend(data   = schools_vis(),
                       pal    = schools_pal(),
                       values = ~schools_vis()[[clean_name(input$school_dem)]],
-                      title  = input$school_dem)
+                      title  = input$school_dem,
+                      position = 'bottomleft')
             
     })
     

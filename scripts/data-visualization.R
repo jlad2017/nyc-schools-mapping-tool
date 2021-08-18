@@ -17,9 +17,10 @@ schools <- as_tibble(read_csv('~/Desktop/life/nyc/data/schools.csv'))
 aq_by_uhf_sp <- readOGR('~/Desktop/life/nyc/data/aq_by_uhf', layer='aq_by_uhf_sp')
 er_by_modzcta_sp <- readOGR('~/Desktop/life/nyc/data/er_by_modzcta', layer='er_by_modzcta_sp')
 
-# --- MAP VISUALISATION --- 
-gmaps_key <- 'AIzaSyAE0VgNlDTHIfZsYvfok2hbYo3efr-k1zU'
-register_google(key=gmaps_key)
+# --- MAP VISUALISATION ---
+f <- read.table("~/Desktop/life/nyc/gmaps-key.txt", header=F,nrows=1)
+key <- f[,1]
+register_google(key=key)
 
 get_static_map <- function(school_category, center='new york, ny, usa', zoom=10) {
   # category = [Elementary, K-8, High school, Junior High-Intermediate-Middle, 

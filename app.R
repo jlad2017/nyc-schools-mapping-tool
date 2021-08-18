@@ -175,6 +175,8 @@ ui <- fluidPage(
                             tags$h3('Author'),
                             tags$br(),
                             'This visualization was created by Janice Lee. You can contact me at janice.lee@pomona.edu!'
+                            tags$br(),
+                            tags$br()
                         ))
                 )
         )

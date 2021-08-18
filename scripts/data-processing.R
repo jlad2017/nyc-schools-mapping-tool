@@ -6,6 +6,7 @@
 # UHF GeoJSONs: https://gist.github.com/miguelpaz/edbc79fc55447ae736704654b3b2ef90
 # Air quality: https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r
 # ER visits: https://data.cityofnewyork.us/Health/Emergency-Department-Visits-and-Admissions-for-Inf/2nwg-uqyg
+# MODZCTA boundaries: https://data.cityofnewyork.us/Health/Modified-Zip-Code-Tabulation-Areas-MODZCTA-/pri4-ifjk
 # -------------
 library(tidyverse)
 library(sf)

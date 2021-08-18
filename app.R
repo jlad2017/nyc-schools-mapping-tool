@@ -9,6 +9,7 @@ library(tidyverse)
 library(leaflet)
 library(htmlTable)
 library(plotly)
+library(RColorBrewer)
 
 clean_name <- function(n) {
     n <- gsub('%+', 'p', n)
@@ -281,7 +282,7 @@ server <- function(input, output) {
                                         school_pal[3], school_pal[3]))
     
     output$school_plot <- renderPlotly({
-        plot_ly(data=school, type='bar', x=~x, y=~y, marker = school_bar_colors) %>% 
+        plot_ly(data=school, type='bar', x=~x, y=~y, marker=school_bar_colors) %>% 
             layout(title = 'School Demographics',
                    xaxis = xform, 
                    yaxis = yform) 
@@ -295,7 +296,7 @@ server <- function(input, output) {
         school <- data.frame(x, y)
 
         output$school_plot <- renderPlotly({
-            plot_ly(data=school, type='bar', x=~x, y=~y, marker = school_bar_colors) %>% 
+            plot_ly(data=school, type='bar', x=~x, y=~y, marker=school_bar_colors) %>% 
                 layout(title = schools$school_name[click$id],
                        xaxis = xform, 
                        yaxis = yform) 

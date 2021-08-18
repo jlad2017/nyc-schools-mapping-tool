@@ -87,11 +87,12 @@ ui <- fluidPage(
                                                        label   = 'Select an environment data type', 
                                                        choices = area_options),
                                     tags$hr(),
-                                    tags$h5('Explanation of options:'),
+                                    tags$h5('Notes:'),
                                     tags$ul(
                                         tags$li('Demographic data is from the 2019-2020 school year.'), 
                                         tags$li('Air quality data is the 2018 annual average of PM2.5 in milligrams / cubic meters (mg/m3) - higher is worse.'),
-                                        tags$li('Pneumonia visits and admissions data are the total visits and admissions to NYC emergency departments for influenza-like illness and/or pneumonia in 2020.')
+                                        tags$li('Pneumonia visits and admissions data are the total visits and admissions to NYC emergency departments for influenza-like illness and/or pneumonia in 2020.'),
+                                        tags$li('School marker size corresponds to the total enrollment of the school.')
                                     )
                                 ),
                                 
@@ -174,7 +175,7 @@ ui <- fluidPage(
                             
                             tags$h3('Author'),
                             tags$br(),
-                            'This visualization was created by Janice Lee. You can contact me at janice.lee@pomona.edu!'
+                            'This visualization was created by Janice Lee. You can contact me at janice.lee@pomona.edu!',
                             tags$br(),
                             tags$br()
                         ))
